@@ -2,6 +2,8 @@
 
 This guide will get you up and running in under 10 minutes.
 
+IF YOU  SEE AN NGROK LINK LIKE "WIX Webhook: https://9cab9468b99a.ngrok.app" REPLACE IT WITH COJOVI.NGROK.DEV , THAT WAS TEMP ENDPOINT
+
 ## 📋 Prerequisites
 
 - Node.js 18+ installed
