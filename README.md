@@ -16,7 +16,7 @@ npm install
 npm run dev
 ```
 
-The server will start on `http://localhost:3000`
+The server will start on `http://localhost:3000` (exposed url via ngrok | cojovi.ngrok.dev)
 
 ### 3. Expose with ngrok
 
@@ -84,8 +84,8 @@ cp .env.example .env
 - `PORT` - Server port (default: 3000)
 
 **Optional:**
-- `UPSTASH_REDIS_REST_URL` - Redis URL (uses in-memory if not set)
-- `UPSTASH_REDIS_REST_TOKEN` - Redis token
+- `UPSTASH_REDIS_REST_URL` - Redis URL (uses in-memory if not set) (only for final production deployment)
+- `UPSTASH_REDIS_REST_TOKEN` - Redis token (only for final production deployment)
 - `LEAD_TTL_SEC` - Data expiration time (default: 86400 = 24 hours)
 - `WIX_WEBHOOK_SECRET` - Webhook validation secret
 
@@ -221,6 +221,8 @@ For production, consider:
 │ ElevenLabs  │◀───│  Fetch          │◀─────────────┘
 │   Agent     │    │  /elevenlabs/   │
 └─────────────┘    └─────────────────┘
+
+final webhook will goto slack for now
 ```
 
 This system is now ready for local development and ngrok exposure!
